@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Série #{{ category.id }}{% endblock %}
+
+{% block body %}
+    <div class="media">
+        <div class="media-body">
+            <h1 class="mt-0">{{category.id}}-{{ category.name}}</h1>
+        </div>
+    </div>
+
+    <a href="{{ path('category_index') }}">
+        Retour à la liste des categories
+    </a>
+{% endblock %}
